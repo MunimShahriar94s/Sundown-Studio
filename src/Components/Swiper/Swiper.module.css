@@ -1,0 +1,44 @@
+/* Swiper.module.css */
+.carousel{
+  margin-top: 20%;
+  cursor: grab;
+}
+
+
+.slide {
+    width: 35vw;
+    border-left: 1px solid #a39e9783;
+  }
+  
+  .slideContent {
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: .8rem;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+  
+.slideContent > div{
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+.carousel > div{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10%;
+}
+
+#gol{
+  background-color: #fe330a;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}

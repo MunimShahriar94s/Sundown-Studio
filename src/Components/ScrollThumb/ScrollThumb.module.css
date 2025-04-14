@@ -1,0 +1,47 @@
+/* scrollthumb.module.css */
+.scrollThumb {
+  position: fixed;
+  width: 16px;
+  height: 16vh;
+
+  right: 0px;
+
+  display: flex;
+  justify-content: end;
+
+  cursor: grab;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, width 0.1s;
+}
+
+.scrollThumb > div {
+  width: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.2s ease-in-out;
+  margin-right: 2px;
+  
+}
+
+.scrollThumb:hover div{
+  width: 11px;
+}
+
+.scrollThumb:hover{
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.scrollThumb:active {
+  cursor: grabbing;
+}
+
+.scrollThumbVisible {
+  opacity: 1;
+}
+
+.scrollThumbHidden {
+  opacity: 0;
+}

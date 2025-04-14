@@ -1,0 +1,17 @@
+.SecondSec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+
+    width: 100%;
+}
+
+.SecondSec > video{
+    width: 95vw;
+
+    border-radius: 5vw;
+
+    margin-top: 4vw;
+}

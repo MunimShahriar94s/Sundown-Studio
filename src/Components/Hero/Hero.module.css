@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Hero{
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    margin-top: 20px;
+}
+
+.link{
+    display: flex;
+    gap: 10px;
+    flex-shrink: 2;
+
+    margin-right: 2vw;
+    margin-left: 200px;
+
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.logo{
+    margin-left: 20px;
+}
+
+.midSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    width: 100%;
+    height: 77%;
+
+    margin-top: 20vh;
+
+    border-bottom: solid #BFBBB6 1px;
+}
+
+.rightText{
+    display: flex;
+    flex-direction: column;
+
+    
+    font-size: 9.5vw;
+    font-weight: 650;
+    line-height: 0.9;
+    letter-spacing: -0.5vw;
+    line-height: 7.5vw;
+
+    text-align: right;
+    
+    margin-right: 4vw;
+    margin-bottom: 4vw;
+
+    transform: scaleY(1.1);
+}
+.leftText{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.75vw;
+    font-weight: 700;
+    word-spacing: -0.18vw;
+    
+    width: 30vw;
+
+    margin-bottom: 4vw;
+    margin-left: 4vw;
+}
+
+.heroShape {
+    position: absolute;
+    right: 0;;
+
+    width: 50vw;
+    height: 40vw;
+
+    transform: translate(0, -12%);
+
+    
+}
+
+.heroShape > * {
+    border-bottom-left-radius: 50vw;
+    border-top-left-radius: 50vw;
+
+    filter: blur(30px);
+
+    background: linear-gradient(#FE320A, #fe3f0a);
+
+}
+
+.hero1{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #FE330A;
+
+    
+}
+.hero2{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #FE330A;
+
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(25px);
+}
+.hero3{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #FE330A;
+
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(25px);
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(0%, -3%);
+    }
+
+    to {
+        transform: translate(-10%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(0%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+
+@media(max-width: 768px){
+    .link{
+        margin-left: 5vw;
+
+        font-size: 15px;
+    }
+    .logo > img{
+        width: 20vw
+    }
+}

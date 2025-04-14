@@ -1,0 +1,111 @@
+.ThirdSec{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    height: 100vh;
+
+    
+    margin-top: 20vw;
+}
+
+.left{
+    font-weight: 700;
+    font-size: 3.5vw;
+
+    width: 100%;
+}
+
+.left > .text{
+
+
+    width: 80%;
+    margin-left: 6vw;
+}
+
+.right{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+
+    width: 85%
+}
+
+.right > img{
+    width: 100%;
+
+    border-radius: 1.85vw;
+
+    margin-bottom: 4vw;
+}
+
+.shapes{
+    position: relative;
+}
+
+.shapes > *{
+    position: absolute;
+
+    width: 30vw;
+    height: 30vw;
+
+    transform: translate(100%, 15%);
+
+    border-radius: 50%;
+}
+
+.shape1{
+    filter: blur(15px);
+
+    
+    background-color: #ff9831;
+}
+
+.shape2{
+    z-index: 1;
+
+    filter: blur(50px);
+
+    background: linear-gradient(#FE320A, #fe3f0a);
+
+    animation-name: anime1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.shape3{
+    background: linear-gradient(#FE320A, #fe3f0a);
+    filter: blur(50px);
+    animation-name: anime1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes anime1 {
+    from {
+        transform: translate(120%, 25%);
+    }
+
+    to {
+        transform: translate(80%, 5%);
+    }
+}
+@keyframes anime2 {
+    from {
+        transform: translate(80%, 5%);
+    }
+
+    to {
+        transform: translate(120%, 25%);
+    }
+}
+
+@media(max-width: 640px){
+    .right{
+        font-size: 2vw;
+    }
+}

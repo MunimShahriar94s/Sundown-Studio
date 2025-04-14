@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.btn{
+    display: inline-flex;
+    justify-content: center;
+
+    position: relative;
+    
+    height: fit-content;
+
+    font-family: "Nunito Sans", serif;
+
+    border: solid 1px #917e78dc;
+    border-radius: 200px;
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    overflow: hidden;
+    
+}
+
+.btn > span{
+    position: relative;
+    z-index: 10;
+}
+
+.blackShape{
+    position: absolute;
+
+    width: 150%;
+    height: 150%;
+
+    background-color: black;
+
+    transform: translate(0, 55%);
+    border-radius: 50%;
+}
+
+@media(max-width: 768px){
+    .btn{
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        padding-left: 2.4vw;
+        padding-right: 2.4vw;
+    }
+}
