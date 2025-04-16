@@ -2,10 +2,11 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 
-    height: 100vh;
+    height: 80vw;
+
 
     
-    margin-top: 20%;
+    
 }
 
 .left{
