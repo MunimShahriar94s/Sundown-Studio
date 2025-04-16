@@ -71,7 +71,7 @@ function FourthSec(){
             <div className={style.main}>
                 {info.map(createProject)}
             </div>
-            <div className={style.btn}><Button text="All Projects ->" /></div>
+            <div className={style.btn}><Button text="All Projects" /></div>
             <div className={style.imageShape}><img src={fixedImg} style={{display: display}} alt="" /></div>
         </div>
     )

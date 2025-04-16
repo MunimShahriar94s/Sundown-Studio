@@ -31,6 +31,7 @@ function Button(props){
             ease: "power2.out"
         })
     }
+    
 
     return(
     <div ref={btn} onMouseEnter={bgToBlack} onMouseLeave={bgToWhite} className={style.btn}>

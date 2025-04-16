@@ -45,3 +45,10 @@
 .scrollThumbHidden {
   opacity: 0;
 }
+
+
+@media(max-width: 720px){
+  .scrollThumb{
+    display: none;
+  }
+}

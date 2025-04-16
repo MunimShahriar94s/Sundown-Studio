@@ -18,12 +18,21 @@
     padding-right: 15px;
 
     overflow: hidden;
+
+    
+    
     
 }
 
 .btn > span{
     position: relative;
     z-index: 10;
+
+    display: flex;
+}
+
+.btn > span > div{
+    width: 10%;
 }
 
 .blackShape{
@@ -44,5 +53,11 @@
         padding-bottom: 2vw;
         padding-left: 2.4vw;
         padding-right: 2.4vw;
+    }
+}
+
+@media(max-width: 420px){
+    .btn{
+        font-size: 2vw;
     }
 }
