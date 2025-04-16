@@ -4,6 +4,9 @@
   cursor: grab;
 }
 
+.slide img{
+  width: 15vw;
+}
 
 .slide {
     width: 35vw;
@@ -17,7 +20,7 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: .8rem;
+    font-size: 1.25vw;
     font-weight: 500;
     border-radius: 8px;
   }
