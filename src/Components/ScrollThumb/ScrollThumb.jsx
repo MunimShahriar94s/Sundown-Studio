@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import styles from "./scrollthumb.module.css";  // Import the CSS Module
+import styles from "./ScrollThumb.module.css";  // Import the CSS Module
 
 const ScrollThumb = () => {
   const [isVisible, setIsVisible] = useState(false);
